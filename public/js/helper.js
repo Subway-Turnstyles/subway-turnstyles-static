@@ -1,6 +1,6 @@
 'use strict'
 
-(() => {
+$( document ).ready(function() {
 
   function retreiveAnswer(a){
 
@@ -14,5 +14,5 @@
 
   }
 
-
-})();
+console.log( "ready!" );
+});
