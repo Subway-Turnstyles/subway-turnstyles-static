@@ -1,0 +1,55 @@
+.results-images {
+  height: 80vh;
+}
+
+.subway-car {
+  display: inline-block;
+  margin-top: 10%;
+  width: 40%;
+  height: 50%;
+  border: 1px solid black;
+}
+
+.riders {
+  display: inline-block;
+  margin-top: 10%;
+  width: 20%;
+  height: 50%;
+  border: 1px solid black;
+  animation-duration: 4s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  @keyframes slidein {
+    from {
+      margin-left: 39%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+  }
+}
+
+@media screen and (max-width: 815px) {
+  @keyframes slidein {
+    from {
+      margin-left: 38%;
+    }
+
+    to {
+      margin-left: 0%;
+    }
+  }
+}
