@@ -5,7 +5,7 @@ const turnstyleURL = '';
 // Search Flask URL for Turnstyle data
 function searchFlask(req, res, next) {
   // fetch flask turnstyle data
-  fetch(`${turnstyleURL}?i=${req.query}`)
+  fetch(`${turnstyleURL}?i=${req.query.data}`)
   .then(r => r.json())
   .then((results) => {
     res.data = results;

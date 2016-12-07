@@ -2,17 +2,19 @@
 
 (() => {
 
-  function retreiveAnswer(a){
 
-    if (a === light){
+  switch (flaskResponse) {
 
-    }else if (a === medium){
+    case 1: flaskResponse = 'light';
 
-    }else (a === heavy){
+      break;
+    case 2: flaskResponse = 'medium';
 
+      break;
+    case 3: flaskResponse = 'heavy';
+
+      break;
     }
-
-  }
 
 
 })();
