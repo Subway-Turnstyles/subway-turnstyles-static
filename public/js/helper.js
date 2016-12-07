@@ -1,6 +1,6 @@
 'use strict'
 
-(() => {
+$( document ).ready(function() {
 
 
   switch (flaskResponse) {
@@ -16,5 +16,5 @@
       break;
     }
 
-
-})();
+console.log( "ready!" );
+});
