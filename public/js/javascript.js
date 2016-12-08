@@ -1,4 +1,8 @@
 console.log('DOM loaded.')
 $( function() {
-  $("#datepicker").datepicker();
+  $("#datepicker").datepicker(
+    inline: true,
+    showOtherMonths);
 })
+
+
