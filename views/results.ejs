@@ -6,6 +6,7 @@
   <title>Results</title>
   <link rel="stylesheet" href="/css/results.css">
   <link rel="stylesheet" href="/css/normalize.css">
+  <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans|Teko" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -14,7 +15,23 @@
 
   <div class="results-container">
     <div class="results-word">
-      <h2>Traffic is predicted to be HEAVY</h2>
+    <% result = 1 %>
+    <% if (result === 1) { %>
+      <h2 id='super-light'>Traffic is predicted to be <span>SUPER LIGHT</span></h2>
+      <h3>It’s nearly empty, commute in comfort.</h3>
+    <% } else if (result === 2) { %>
+      <h2 id="light">Traffic is predicted to be <span>LIGHT</span></h2>
+      <h3>You still might get a seat.</h3>
+    <% } else if (result === 3) { %>
+      <h2 id="medium">Traffic is predicted to be <span>MEDIUM</span></h2>
+      <h3>You can still ride the L train.</h3>
+    <% } else if (result === 4) { %>
+      <h2 id="heavy">Traffic is predicted to be <span>HEAVY</span></h2>
+      <h3>Wedge yourself through that door.</h3>
+    <% } else if (result === 5) { %>
+      <h2 id="super-heavy">Traffic is predicted to be <span>SUPER HEAVY</span></h2>
+      <h3>Be prepared to wait for 5 trains to go by.</h3>
+    <% } %>
     </div>
 
     <div class="results-images">
@@ -24,7 +41,53 @@
 
       <div class="rider-container">
         <div class="riders">
+        <% if (result === 1) { %>
+          <img src="/images/scooter.gif" alt="riders">
+        <% } else if (result === 2) { %>
+          <img src="/images/tourists.gif" alt="riders">
+          <img src="/images/photographer.png" alt="riders" id='rider-2'>
+          <img src="/images/workout.png" alt="riders" id='rider-2'>
+        <% } else if (result === 3) { %>
           <img src="/images/light-rider.png" alt="riders">
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+        <% } else if (result === 4) { %>
+          <img src="/images/light-rider.png" alt="riders">
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+        <% } else if (result === 5) { %>
+          <div id="heaviest">
+            <div class='heavy-rider-container'>
+              <img src="/images/light-rider.png" alt="riders">
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+            </div>
+            <div class='heavy-rider-container'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+            </div>
+          </div>
+        <% } %>
         </div>
       </div>
     </div>
