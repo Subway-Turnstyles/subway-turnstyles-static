@@ -64,36 +64,45 @@ header h1 {
 }
 
 .rider-container {
-  width: 60%;
-  height: 50%;
+  width: 900px;
+  height: 400px;
   display: flex;
   align-items: center;
+  animation-duration: 4s;
+  animation-name: slidein;
 }
 
-.riders {
-  width: 150px;
+/*.riders {
+  width: 900px;
+  border: 1px solid black;
   height: 150px;
   margin-left: -5%;
   margin-top: 0px;
   z-index: 1;
   display: flex;
-  animation-duration: 4s;
-  animation-name: slidein;
+  flex-wrap: wrap;
+}*/
+
+.rider-container img {
+  width: 115px;
+  height: 150px;
+  margin-right: 10px;
 }
 
-.riders img {
-  width: 150px;
-  height: 200px;
-}
-
-#id {
+.heaviest {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heavy-rider-container {
   display: flex;
-  margin-top: -60px;
+  margin-top: 10px;
+}
+
+.so-many {
+  margin-top: -10px;
 }
 
 @keyframes slidein {
@@ -102,7 +111,7 @@ header h1 {
   }
 
   to {
-    margin-left: -5%;
+    margin-left: 0%;
   }
 }
 

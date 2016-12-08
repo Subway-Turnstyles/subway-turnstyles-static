@@ -3,10 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Results</title>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <link rel="stylesheet" href="/css/results.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans|Teko" rel="stylesheet">
+  <title>Results</title>
 </head>
 <body>
   <header>
@@ -40,58 +42,66 @@
       </div>
 
       <div class="rider-container">
-        <div class="riders">
         <% if (result === 1) { %>
-          <img src="/images/scooter.gif" alt="riders">
+          <img src="" alt="riders" class="div1">
         <% } else if (result === 2) { %>
-          <img src="/images/tourists.gif" alt="riders">
-          <img src="/images/photographer.png" alt="riders" id='rider-2'>
-          <img src="/images/workout.png" alt="riders" id='rider-2'>
+          <img src="" alt="riders" class="div1">
+          <img src="" alt="riders" class="div2">
+          <img src="" alt="riders" class="div3">
         <% } else if (result === 3) { %>
-          <img src="/images/light-rider.png" alt="riders">
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <img src="" alt="riders" class="div1">
+          <img src="" alt="riders" class="div2">
+          <img src="" alt="riders" class="div3">
+          <img src="" alt="riders" class="div4">
+          <img src="" alt="riders" class="div5">
         <% } else if (result === 4) { %>
-          <img src="/images/light-rider.png" alt="riders">
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-          <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+        <div class="heaviest">
+          <div class="heavy-rider-container">
+            <img src="" alt="riders" class="div1">
+            <img src="" alt="riders" class="div2">
+            <img src="" alt="riders" class="div3">
+            <img src="" alt="riders" class="div4">
+          </div>
+          <div class="heavy-rider-container">
+            <img src="" alt="riders" class="div5">
+            <img src="" alt="riders" class="div6">
+            <img src="" alt="riders" class="div7">
+            <img src="" alt="riders" class="div8">
+            <img src="" alt="riders" class="div9">
+          </div>
+        </div>
         <% } else if (result === 5) { %>
-          <div id="heaviest">
-            <div class='heavy-rider-container'>
-              <img src="/images/light-rider.png" alt="riders">
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+          <div class="heaviest">
+            <div class='heavy-rider-container so-many'>
+              <img src="" alt="riders" class="div1">
+              <img src="" alt="riders" class="div2">
+              <img src="" alt="riders" class="div3">
+              <img src="" alt="riders" class="div4">
+              <img src="" alt="riders" class="div5">
             </div>
-            <div class='heavy-rider-container'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
-              <img src="/images/light-rider.png" alt="riders" id='rider-2'>
+            <div class="heavy-rider-container so-many">
+              <img src="" alt="riders" class="div6">
+              <img src="" alt="riders" class="div7">
+              <img src="" alt="riders" class="div8">
+              <img src="" alt="riders" class="div9">
+              <img src="" alt="riders" class="div10">
+              <img src="" alt="riders" class="div11">
+              <img src="" alt="riders" class="div12">
+            </div>
+            <div class='heavy-rider-container so-many'>
+              <img src="" alt="riders" class="div13">
+              <img src="" alt="riders" class="div14">
+              <img src="" alt="riders" class="div15">
+              <img src="" alt="riders" class="div16">
+              <img src="" alt="riders" class="div17">
+              <img src="" alt="riders" class="div18">
             </div>
           </div>
         <% } %>
-        </div>
       </div>
     </div>
 
   </div>
+  <script src="/js/javascript.js"></script>
 </body>
 </html>
