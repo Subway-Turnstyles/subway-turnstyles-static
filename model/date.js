@@ -1,10 +1,13 @@
 const db = require('../dbConnect');
 
 function getDate(req, res, next) {
+  // console.log(req.query);
+  // console.log(req.query.bob);
   db.one(
-    `SELECT * FROM date WHERE day=$1;`, [req.body.date])
+    `SELECT result FROM bob WHERE day=$1;`, [req.query.bob])
   .then((result) => {
-      res.result = result;
+      res.data = result;
+      console.log(res.data)
       next();
     })
     .catch((error) => {
