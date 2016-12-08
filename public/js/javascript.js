@@ -1,7 +1,10 @@
 console.log('DOM loaded.')
 $( function() {
   $("#datepicker").datepicker();
-})
+});
+
+
+
 
 const images = [
 "http://i.imgur.com/7s2p8Of.gif",
@@ -55,3 +58,4 @@ let assignImages = function() {
 assignImages();
 
 // div1.attr('src', randomImg)
+
