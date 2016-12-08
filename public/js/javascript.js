@@ -1,8 +1,10 @@
 console.log('DOM loaded.')
 $( function() {
-  $("#datepicker").datepicker(
+  $("#datepicker").datepicker({
     inline: true,
-    showOtherMonths);
-})
+    showOtherMonths
+    dayNameMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+    });
+});
 
 
